@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
+</head>
+<body class="">
+    <header>
+        <h1 class="title">My Blog</h1>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <article class="card">
+                <a href="" class="article-link">
+                    <img src="https://live.staticflickr.com/7899/33529795428_44614ee3c6_w.jpg" alt="">
+                    <div class="card-content">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo</p>
+                    </div>
+                </a>
+            </article>
+
+            {% for article in collections.articles %}
+
+            <article class="card">
+                <a href="{{ article.url }}" class="article-link">
+                    <img src="https://live.staticflickr.com/7899/33529795428_44614ee3c6_w.jpg" alt="">
+                    <div class="card-content">
+                        <h2>{{ article.data.title }}</h2>
+                        <p>{{ article.data.page.excerpt | safe }}</p>
+                    </div>
+                </a>
+            </article>
+
+            {%- endfor %}
+        </section>
+    </main>
+</body>
+</html>
+
+

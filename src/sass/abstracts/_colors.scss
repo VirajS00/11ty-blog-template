@@ -1,0 +1,27 @@
+$colors: (
+	light: (
+		body: (
+			bg: #fff,
+			text: #000
+		),
+		card: (
+			title: #000,
+			text: #6a6a6a,
+			bg: #efefef,
+			bgHover: #c9c9c9,
+			shadow: hsl(0 0 0 / 0.25)
+		)
+	),
+	dark: (
+		body: (
+			bg: #0f1c2f,
+			text: #fff
+		),
+		card: (
+			title: #ffffff,
+			text: #6f97d3,
+			bg: #355f9d,
+			shadow: hsla(216 49% 45% / 0.48)
+		)
+	)
+);

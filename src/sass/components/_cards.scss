@@ -1,0 +1,45 @@
+@use '../abstracts/' as *;
+
+section.cards-container {
+	width: 85vw;
+	max-width: 1200px;
+	// height: 100vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1em;
+}
+
+article.card {
+	--border-r: 2em;
+	background-color: var(--clr-card-bg);
+	border-radius: var(--border-r);
+
+	a.article-link {
+		display: block;
+		text-decoration: none;
+		border-radius: var(--border-r);
+		transition: background-color 250ms ease;
+		height: 100%;
+		width: 100%;
+
+		&:hover {
+			background-color: var(--clr-card-bgHover);
+		}
+	}
+
+	.card-content {
+		padding: 1em 2em;
+		color: var(--clr-card-text);
+	}
+
+	h2 {
+		color: var(--clr-card-title);
+	}
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		border-radius: var(--border-r) var(--border-r) 0 0;
+	}
+}

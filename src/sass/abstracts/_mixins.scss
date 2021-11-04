@@ -1,0 +1,7 @@
+@mixin pos0($pos: absolute, $val: 0) {
+	position: #{$pos};
+	top: #{$val};
+	right: #{$val};
+	bottom: #{$val};
+	left: #{$val};
+}

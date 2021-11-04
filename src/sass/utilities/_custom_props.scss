@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+	--font-pmry: 'Ubuntu', sans-serif;
+
+	@each $theme, $components in $colors {
+		@if $theme == 'light' {
+			@each $component, $value in $components {
+				@each $prop, $value in $value {
+					--clr-#{$component}-#{$prop}: #{$value};
+				}
+			}
+		}
+	}
+}
+
+.darkmode {
+	@each $theme, $components in $colors {
+		@if $theme == 'dark' {
+			@each $component, $value in $components {
+				@each $prop, $value in $value {
+					--clr-#{$component}-#{$prop}: #{$value};
+				}
+			}
+		}
+	}
+}
