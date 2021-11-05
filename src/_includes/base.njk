@@ -9,6 +9,9 @@
 </head>
 <body class="">
     <header>
+        {% if type=="article" %}
+            <a href="{{ '/index.html' | url }}" class="back"><< Back</a>
+        {% endif %}
         <h1 class="title">{{ title }}</h1>
         <input type="checkbox" name="darkmodeToggle" id="darkmodeToggle" class="darkmode-check" aria-label="dark mode toggle">
         <label for="darkmodeToggle" class="darkmodeSwitch">
@@ -25,7 +28,7 @@
         </p>
     </footer>
 
-    <script src="js/darkmode.js"></script>
+    <script src="{{ '/js/darkmode.js' | url }}"></script>
 </body>
 </html>
 

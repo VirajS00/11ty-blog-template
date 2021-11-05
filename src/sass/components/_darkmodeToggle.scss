@@ -39,7 +39,7 @@
 	background-color: var(--bg);
 
 	@include pseudo($loc: after) {
-		transform: translate(calc(var(--width) - 165%), -50%);
+		transform: translate(calc(var(--width) - 160%), -50%);
 		top: 35%;
 		background-color: transparent;
 		box-shadow: 0.4em 0.4em 0 #fff;

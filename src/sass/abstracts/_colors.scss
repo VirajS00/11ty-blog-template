@@ -13,6 +13,10 @@ $colors: (
 		),
 		footer: (
 			border: #ccc
+		),
+		back: (
+			bg: #dcdcdc,
+			hover: hsl(0 0% 0% / 0.2)
 		)
 	),
 	dark: (
@@ -29,6 +33,10 @@ $colors: (
 		),
 		footer: (
 			border: #26426a
+		),
+		back: (
+			bg: #1d3457,
+			hover: hsl(0 0% 100% / 0.15)
 		)
 	)
 );
