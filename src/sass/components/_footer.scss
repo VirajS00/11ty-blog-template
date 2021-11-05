@@ -1,8 +1,10 @@
 footer {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
-	border-top: 1px solid #ccc;
+	width: 98%;
+	border-top: 1px solid var(--clr-footer-border);
+	left: 50%;
+	transform: translateX(-50%);
 
 	p {
 		text-align: center;

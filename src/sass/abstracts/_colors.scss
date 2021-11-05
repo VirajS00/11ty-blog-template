@@ -10,6 +10,9 @@ $colors: (
 			bg: #efefef,
 			bgHover: #c9c9c9,
 			shadow: hsl(0 0% 0% / 0.25)
+		),
+		footer: (
+			border: #ccc
 		)
 	),
 	dark: (
@@ -23,6 +26,9 @@ $colors: (
 			bg: #1c3052,
 			bgHover: #28426c,
 			shadow: hsla(216 49% 45% / 0.48)
+		),
+		footer: (
+			border: #26426a
 		)
 	)
 );

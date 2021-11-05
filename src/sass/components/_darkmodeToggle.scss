@@ -5,24 +5,32 @@
 }
 
 .darkmodeSwitch {
-	--height: 2em;
-	--width: 4.5em;
-	height: var(--height);
+	--size: 2.5em;
+	--width: 7em;
+	height: var(--size);
 	width: var(--width);
 	background-color: rgb(39, 190, 255);
 	border-radius: 100vh;
 	position: absolute;
 	right: 1.5em;
 
-	@include pseudo($loc: after) {
-		background-color: #fff;
-		height: calc(var(--height) - 0.5em);
-		width: calc(var(--height) - 0.5em);
-		border-radius: 50%;
+	@include pseudo($loc: before, $content: 'Light') {
+		left: 15%;
 		top: 50%;
 		transform: translateY(-50%);
-		left: calc(var(--width) / 20);
-		transition: transform 250ms ease;
+
+		color: rgb(14, 53, 69);
+		font-size: 1.1rem;
+	}
+
+	@include pseudo($loc: after) {
+		background-color: #ff0;
+		height: calc(var(--size) - 1em);
+		width: calc(var(--size) - 1em);
+		border-radius: 50%;
+		top: 50%;
+		transform: translate(calc(var(--width) - 130%), -50%);
+		transition: transform 250ms ease-in-out;
 	}
 }
 
@@ -31,10 +39,13 @@
 	background-color: var(--bg);
 
 	@include pseudo($loc: after) {
-		transform: translate(calc(var(--width) - 115%), -50%);
+		transform: translate(calc(var(--width) - 165%), -50%);
+		top: 35%;
 		background-color: transparent;
-		box-shadow: -0.4em 0.4em 0 #fff;
-		top: 30%;
-		left: 10%;
+		box-shadow: 0.4em 0.4em 0 #fff;
+	}
+
+	@include pseudo($loc: before, $content: 'Dark') {
+		color: rgb(185, 235, 255);
 	}
 }

@@ -6,6 +6,7 @@ body {
 	color: var(--clr-body-text);
 	min-height: 100vh;
 	position: relative;
+	transition: background-color 250ms ease;
 }
 
 header {
