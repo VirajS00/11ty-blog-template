@@ -8,6 +8,6 @@ Here we go!
 
 this is a continuation of the first article.
 
-```bash
-some code
+```git
+git commit -m "new commit"
 ```
