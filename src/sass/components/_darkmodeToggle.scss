@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+.darkmode-check {
+	display: none;
+}
+
+.darkmodeSwitch {
+	--height: 2em;
+	--width: 4.5em;
+	height: var(--height);
+	width: var(--width);
+	background-color: rgb(39, 190, 255);
+	border-radius: 100vh;
+	position: absolute;
+	right: 1.5em;
+
+	@include pseudo($loc: after) {
+		background-color: #fff;
+		height: calc(var(--height) - 0.5em);
+		width: calc(var(--height) - 0.5em);
+		border-radius: 50%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: calc(var(--width) / 20);
+		transition: transform 250ms ease;
+	}
+}
+
+.darkmode-check:checked + .darkmodeSwitch {
+	--bg: rgb(0, 69, 99);
+	background-color: var(--bg);
+
+	@include pseudo($loc: after) {
+		transform: translate(calc(var(--width) - 115%), -50%);
+		background-color: transparent;
+		box-shadow: -0.4em 0.4em 0 #fff;
+		top: 30%;
+		left: 10%;
+	}
+}

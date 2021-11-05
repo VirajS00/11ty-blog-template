@@ -5,3 +5,11 @@
 	bottom: #{$val};
 	left: #{$val};
 }
+
+@mixin pseudo($loc: before, $content: '', $pos: absolute) {
+	&::#{$loc} {
+		content: $content;
+		position: $pos;
+		@content;
+	}
+}
