@@ -8,6 +8,6 @@ this is page 2.
 
 loremwnnwnnwnnwnn
 
-```c++
+```cpp
 cout << "hello world";
 ```
