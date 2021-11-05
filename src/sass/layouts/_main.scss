@@ -4,6 +4,8 @@ body {
 	font-family: var(--font-pmry);
 	background-color: var(--clr-body-bg);
 	color: var(--clr-body-text);
+	min-height: 100vh;
+	position: relative;
 }
 
 header {

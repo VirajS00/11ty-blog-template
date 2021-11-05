@@ -9,7 +9,7 @@ $colors: (
 			text: #6a6a6a,
 			bg: #efefef,
 			bgHover: #c9c9c9,
-			shadow: hsl(0 0 0 / 0.25)
+			shadow: hsl(0 0% 0% / 0.25)
 		)
 	),
 	dark: (
@@ -20,7 +20,8 @@ $colors: (
 		card: (
 			title: #ffffff,
 			text: #6f97d3,
-			bg: #355f9d,
+			bg: #1c3052,
+			bgHover: #28426c,
 			shadow: hsla(216 49% 45% / 0.48)
 		)
 	)

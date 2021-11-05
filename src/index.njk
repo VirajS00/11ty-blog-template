@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
-</head>
-<body class="">
-    <header>
-        <h1 class="title">My Blog</h1>
-    </header>
+---
+layout: base.njk
+title: My Blog
+---
 
-    <main>
+<main>
         <section class="cards-container">
             <article class="card">
                 <a href="" class="article-link">
@@ -38,8 +29,5 @@
 
             {%- endfor %}
         </section>
-    </main>
-</body>
-</html>
-
+</main>
 
