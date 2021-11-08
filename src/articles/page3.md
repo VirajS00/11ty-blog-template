@@ -1,5 +1,5 @@
 ---
-title: page3
+title: How to write SQL
 ---
 
 This articlr is about how to write **SQL** queries.
