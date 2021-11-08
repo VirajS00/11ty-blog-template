@@ -1,5 +1,6 @@
 ---
 title: hey you
+coverImage: 1.jpg
 ---
 
 Here we go!

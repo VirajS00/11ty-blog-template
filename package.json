@@ -32,5 +32,8 @@
 	},
 	"browserslist": [
 		"last 2 versions"
-	]
+	],
+	"devDependencies": {
+		"@11ty/eleventy-img": "^1.0.0"
+	}
 }

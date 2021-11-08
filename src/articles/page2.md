@@ -1,5 +1,6 @@
 ---
 title: Hello World
+coverImage: 2.jpg
 ---
 
 this is Hello world.

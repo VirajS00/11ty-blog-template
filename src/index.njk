@@ -9,7 +9,8 @@ title: My Blog
 
             <article class="card">
                 <a href="{{ article.url }}" class="article-link">
-                    <img src="https://live.staticflickr.com/7899/33529795428_44614ee3c6_w.jpg" alt="">
+                    {% set image_url = ["./src/img/", article.data.coverImage] | join %}
+                    {% image image_url, article.data.title %}
                     <div class="card-content">
                         <h2>{{ article.data.title }}</h2>
                         <p>{{ article.data.page.excerpt | safe }}</p>

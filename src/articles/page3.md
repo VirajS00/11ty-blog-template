@@ -1,5 +1,6 @@
 ---
 title: How to write SQL
+coverImage: 3.jpg
 ---
 
 This articlr is about how to write **SQL** queries.

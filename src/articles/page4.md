@@ -1,5 +1,6 @@
 ---
 title: How Does it work?
+coverImage: 4.jpg
 ---
 
 11ty is a static site generator which uses many templating languages. The languages I've choose to work with are nunjunks and markdown.
