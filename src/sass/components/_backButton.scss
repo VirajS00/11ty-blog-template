@@ -4,13 +4,14 @@ a.back {
 	text-decoration: none;
 	background-color: var(--clr-back-bg);
 	color: var(--clr-body-text);
+
+	padding: 0.5em 1.5em;
+	font-size: 1.1rem;
+	border-radius: 100vh;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0;
-	padding: 0.5em 1.5em;
-	font-size: 1.1rem;
-	border-radius: 100vh;
 
 	@include pseudo($loc: after, $inset: true) {
 		background-color: var(--clr-back-hover);
@@ -22,5 +23,9 @@ a.back {
 
 	&:hover::after {
 		opacity: 1;
+	}
+
+	@media screen and (max-width: 768px) {
+		display: none;
 	}
 }

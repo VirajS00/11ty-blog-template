@@ -23,6 +23,10 @@ header {
 	h1 {
 		margin: 0;
 	}
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
 }
 
 main {

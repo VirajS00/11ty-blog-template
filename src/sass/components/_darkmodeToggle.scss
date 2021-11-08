@@ -14,6 +14,8 @@
 	position: absolute;
 	right: 1.5em;
 
+	z-index: 1000;
+
 	@include pseudo($loc: before, $content: 'Light') {
 		left: 15%;
 		top: 50%;
@@ -31,6 +33,12 @@
 		top: 50%;
 		transform: translate(calc(var(--width) - 130%), -50%);
 		transition: transform 250ms ease-in-out;
+	}
+
+	@media screen and (max-width: 768px) {
+		position: fixed;
+		top: initial;
+		bottom: 1em;
 	}
 }
 
